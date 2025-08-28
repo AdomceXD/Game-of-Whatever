@@ -14,3 +14,6 @@ Text based game about doing tasks and leveling a character.
 **Build project:**
 
 ```./build```
+
+## ! Disclamer !
+### This project is built for only Linux systems. I don't plan on porting over to windows. This game is best played with a Window manager (i3, dwm, awesomewm) on 1920x1080 resolution inside a terminal.
