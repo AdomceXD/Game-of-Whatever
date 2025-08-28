@@ -1,0 +1,2 @@
+clear
+g++ main.cpp CommandHandler.cpp InfoScreens.cpp -o GoV

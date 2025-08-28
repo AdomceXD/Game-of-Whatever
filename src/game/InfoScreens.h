@@ -1,0 +1,9 @@
+#ifndef INFOSCREENS_H
+#define INFOSCREENS_H
+
+void Help();
+void Stats();
+void Credits();
+void StartScreen();
+
+#endif
