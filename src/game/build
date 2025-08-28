@@ -1,2 +1,2 @@
 clear
-g++ main.cpp CommandHandler.cpp InfoScreens.cpp -o GoV
+g++ main.cpp CommandHandler.cpp InfoScreens.cpp -o GoW
