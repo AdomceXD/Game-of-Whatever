@@ -35,6 +35,7 @@ void GetCommand() {
         switch (command) {
             case CLEAR:
                 system("clear");
+		StartScreen();
                 break;
             case EXIT:
                 system("clear");
