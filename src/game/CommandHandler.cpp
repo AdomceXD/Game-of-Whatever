@@ -7,7 +7,8 @@
 enum Commands {
     CLEAR,
     EXIT,
-    HELP
+    HELP,
+    EMPTY
 };
 
 std::string toLower(const std::string& str) {
@@ -21,17 +22,16 @@ int ParseCommand(const std::string& input) {
     if (cmd == "clear") return CLEAR;
     if (cmd == "exit") return EXIT;
     if (cmd == "help") return HELP;
+    if (cmd.empty()) return EMPTY;
     return -1;
 }
 
 void GetCommand() {
     while (true) {
         std::string input;
-        std::cout << "> ";
+        printf("> ");
         std::getline(std::cin, input);
-
         Commands command = static_cast<Commands>(ParseCommand(input));
-
         switch (command) {
             case CLEAR:
                 system("clear");
@@ -42,8 +42,11 @@ void GetCommand() {
             case HELP:
                 Help();
                 break;
+	    case EMPTY:
+		printf("");
+		break;
             default:
-                std::cout << "Unknown command" << std::endl;
+                printf("Unknown command\n");
                 break;
         }
     }
